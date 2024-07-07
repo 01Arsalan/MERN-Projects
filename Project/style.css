@@ -1,0 +1,779 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  /*Navigation Bar*/
+  .nav{
+    height:86px;
+    width: 100%;
+    background:#F0F0F0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 8rem;
+    box-shadow: 0px 3px 10px rgb(221, 220, 220);
+    position:fixed;
+    top:0;
+    z-index: 2;
+  }
+  .nav .logo-brand{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .nav .logo-brand .logo{
+    width:70px;
+    border-radius: 35px;
+  }
+  .nav .logo-brand .brand{
+    font-family: "Gill Sans";
+    font-weight: 400;
+    text-transform: capitalize;
+    color: rgb(199, 67, 23);
+  }
+  
+  .nav .links{
+    display: flex;
+    gap:3rem;
+  }
+  .nav .links .link{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(199, 67, 23);
+    text-transform: capitalize;
+  }
+  
+  
+  /*Home Image*/
+  
+  .homeImg{
+    width:100%;
+    height: 20rem;
+    margin-top: 80px;
+    display: flex;
+  }
+  .homeImg .homeImg--img{
+    width:100%
+  }
+  
+  
+  /*Deals and Offers*/
+  
+  .deals{
+    height:22rem;
+    margin: 2rem 8rem;
+  }
+  
+  .deals--title{
+    font-family: "Gill Sans";
+    text-transform: capitalize;
+    font-weight: 630;
+    color: rgb(38, 13, 5);;
+  }
+  .deals .lines{
+    display: flex;
+    gap: 0.2rem;
+  }
+  
+  .deals .line,
+  .lines .smallLine{
+    width:3rem;
+    height:2px;
+    background: rgb(63, 22, 8);
+    border: none;
+    border-radius: 3px;
+    margin-top: 1rem;
+  }
+  .lines .smallLine{
+    width:0.2rem;
+  }
+  
+  .deal{
+    width:fit-content;
+    height: 15rem;
+    border: none;
+    border-radius: 15px;
+    margin: 1rem 0rem;
+    display: flex;
+    flex-flow: row;
+    background-color: antiquewhite;
+  }
+  
+  .deal--detail .flat{
+    color: rgb(63, 22, 8);
+    font-family: "Gill Sans";
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: .6rem 0rem 0rem 1rem;
+  }
+  .deal--detail .price{
+    font-family: "Gill Sans";
+    font-size: 4.4rem;
+    font-weight: 600;
+    margin-left: 1rem;
+    transform: translateY(-12%);
+    color: rgb(63, 22, 8);
+    text-transform: uppercase;
+  }
+  .offAbove{
+    display: flex;
+    flex-flow: row;
+    gap:.7rem
+  }
+  .offAbove .off{
+    font-family: Helvetica;
+    font-size: 4.4rem;
+    font-weight: 600;
+    margin-left: 1rem;
+    transform: translateY(-30%);
+    color: rgb(63, 22, 8);
+    text-transform: uppercase;
+    letter-spacing: -3px;
+  }
+  .offAbove .above{
+    font-family: Helvetica;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transform: translateY(-17%);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+  .deal--detail .code{
+    font-family: Helvetica;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    border: 1px dashed rgb(63, 22, 8);
+    border-radius: 7px;
+    display: inline;
+    padding: 10px 15px;
+    margin-left: 1rem;
+    transform: translateY(-10%);
+  }
+  .deal--detail .code .dim{
+    color: rgba(71, 70, 70, 0.884);
+  }
+  
+  .deal--img .img{
+    width:150px;
+    height: 150px;
+    border-radius: 75px;
+    display: flex;
+    margin: 4rem 0.7rem 0rem 1rem;
+  }
+  
+  .tiles{
+    display: flex;
+    flex-flow: row;
+    gap: 1.3rem;
+    overflow: scroll;
+  }
+  .tiles::-webkit-scrollbar { 
+    width: 0;
+  }
+  
+  
+  .deals--btns{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .deals--btns .btn{
+    width:12px;
+    height: 12px;
+    border-radius: 6px;
+    border: none;
+    background: rgb(119, 117, 117);
+  
+  }
+  
+  
+  /* About Section */
+  
+  .about{
+    display: flex;
+    flex-flow: row;
+    margin: 4rem 8rem;
+    align-items: center;
+  }
+  .about--detail .title{
+    font-family: Helvetica;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgb(63, 22, 8);
+    text-transform: capitalize;
+  }
+  .about--detail .discription{
+    font-family: Helvetica;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    margin-top: .8rem;
+  }
+  
+  .about--detail .lines{
+    display: flex;
+    gap: 0.2rem;
+  }
+  
+  .about--detail .line,
+  .lines .smallLine{
+    width:3rem;
+    height:2px;
+    background: rgb(63, 22, 8);
+    border: none;
+    border-radius: 3px;
+    margin-top: 1rem;
+  }
+  .lines .smallLine{
+    width:0.2rem;
+  }
+  
+  .about--detail .detail{
+    margin-top: .8rem;
+    text-transform: capitalize;
+    line-height: 1.5rem;
+    text-align:justify;
+    width: 40rem;
+  }
+  
+  .about--img{
+    width :300px;
+    height: 300px;
+    border-radius: 150px;
+    margin-left: 14rem;
+  }
+  
+  /* Message section */
+  
+  .message{
+    margin:4rem 8rem;
+    border-radius: 9px;
+    overflow: hidden;
+  }
+  
+  /* Journey Section */
+  
+  .growth{
+    height: fit-content;
+    background: rgb(216, 214, 214);
+    display: flex;
+    justify-content: center;
+  }
+  .growth--info{
+    margin-left: 8rem;
+  }
+  .growth--title{
+    margin-top: 3rem;
+    font-size: 1.7rem;
+    font-family: Helvetica;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+  }
+  .growth--title .brand{
+    color: rgb(63, 22, 8);
+  }
+  
+  .date_dis{
+    display: flex;
+    flex-flow: row;
+    font-family: Helvetica;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  
+  .date_dis .date{
+    font-weight: 600;
+  }
+  .date_dis .discription{
+    padding: 10px 20px;
+    background: white;
+    border-radius: 7px;
+    margin-left: 3rem;
+    transform: translateY(-15%);
+  }
+  
+  .growth--img{
+    width: 500px;
+    height: 500px;
+    margin-left: 14rem;
+    animation: rotation infinite 20s linear;
+  }
+  @keyframes rotation{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  /* Locations */
+  .across{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .across--title,
+  .across-launch{
+    font-family: Helvetica;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 2rem;
+  }
+  .across-launch{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: .7rem;
+    color: rgb(63, 22, 8);
+  }
+  
+  .across .lines{
+    display: flex;
+    gap: 0.2rem;
+  }
+  
+  .across .line,
+  .lines .smallLine{
+    width:3rem;
+    height:2px;
+    background: rgb(63, 22, 8);
+    border: none;
+    border-radius: 3px;
+    margin-top: 1rem;
+  }
+  .lines .smallLine{
+    width:0.2rem;
+  }
+  
+  .across--flags{
+    display: flex;
+    flex-flow: row;
+    gap:2rem
+  }
+  .across-tile{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .across-tile .img{
+    width:18rem;
+    height: 12rem;
+    border-radius: 9px;
+  }
+  .across-tile .place{
+    margin-top: .7rem;
+    font-family: Helvetica;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  
+  }
+  
+  /* Quality section*/
+  
+  .quality{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height:16rem;
+    width:100%;
+    background-image: url("./img/quality_img2.avif");
+    background-size: 25%;
+    position: relative;
+  }
+  .quality::before {
+    content: "";
+    background: rgba(28, 27, 27, 0.464); /* Adjust the color and opacity as needed */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .quality .title{
+    margin-top: 2rem;
+    color: white;
+    z-index: 2;
+  }
+  .quality .lines{
+    display: flex;
+    gap: 0.2rem;
+    z-index: 2;
+  }
+  
+  .quality .line,
+  .lines .smallLine{
+    width:3rem;
+    height:2px;
+    background: rgb(63, 22, 8);
+    border: none;
+    border-radius: 3px;
+    margin-top: 1rem;
+    background: rgb(255, 255, 255);
+  }
+  .quality .lines .smallLine{
+    width:0.2rem;
+    background: rgb(255, 255, 255);
+    z-index: 2;
+  }
+  
+  .quality--items{
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row;
+    border-radius: 9px;
+  
+  }
+  .quality--items .tile{
+    width: 24rem;
+    background: rgb(255, 253, 253);
+    border:.5px solid black;
+    transform: translateY(42%);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  
+  }
+  .quality--items .tile:first-child{
+    border-radius: 9px 0px 0px 9px;
+  }
+  .quality--items .tile:last-child{
+    border-radius: 0px 9px 9px 0px;
+  }
+  
+  .quality--items .tile .img{
+    margin-top: 1rem;
+    width:50px;
+  }
+  .quality--items .tile .tile--name{
+    margin-top: 1rem;
+    font-family: Helvetica;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .quality--items .tile .tile--detail{
+    font-family: Helvetica;
+    font-weight: 400;
+    margin: 1rem 1.4rem;
+    text-align: justify;
+  }
+  
+  
+  /* Explore Section */
+  
+  .explore{
+    margin: 9rem 8rem 0rem 8rem;
+    display: flex;
+    flex-flow: column;
+  }
+  .explore--title{
+    text-transform: capitalize;
+    font-size: 1.7rem;
+  }
+  
+  .explore .lines{
+    display: flex;
+    gap: 0.2rem;
+  }
+  
+  .explore .line,
+  .lines .smallLine{
+    width:3rem;
+    height:2px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 1rem;
+    background: rgb(0, 0, 0);
+  }
+  .lines .smallLine{
+    width:0.2rem;
+    background: rgb(0, 0, 0);
+  }
+  
+  .explore--items{
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+  .explore--items .tile{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .explore--items .tile .img{
+    width: 180px;
+    height: 150px;
+    border-radius: 9px;
+  }
+  
+  
+  /* Best-Sellers Section */
+  
+  .bestSellers{
+    display: flex;
+    flex-flow: column;
+    margin: 4rem 0rem 0rem 0rem;
+    padding: 0rem 8rem 3rem 8rem;
+    background-color: gainsboro;
+   
+  }
+  .bestSellers--title{
+    font-size: 1.7rem;
+    margin-top: 2rem;
+  }
+  .bestSellers .lines{
+    display: flex;
+    gap: 0.2rem;
+  }
+  .bestSellers .line,
+  .lines .smallLine{
+    width:3rem;
+    height:2px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 1rem;
+    background: rgb(0, 0, 0);
+  }
+  .lines .smallLine{
+    width:0.2rem;
+    background: rgb(0, 0, 0);
+  }
+  
+  .bestSellers--items{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+  .bestSellers--items .tile{
+    background: white;
+    width: 20rem;
+    border-radius: 9px;
+    margin-top: 2rem;
+  }
+  .bestSellers--items .tile .img{
+    width: 20rem;
+    height: 14rem;
+    border-radius: 9px 9px 0px 0px;
+  }
+  .bestSellers--items .tile .recommended{
+    color:rgb(63, 22, 8);
+    margin: 1rem 0rem 0rem 1rem;
+  }
+  .bestSellers--items .tile .name{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: .4rem 0rem 0rem 1rem;
+  }
+  .bestSellers--items .tile .detail{
+    margin: .4rem 0rem 2rem 1rem;
+    text-transform: capitalize;
+  }
+  
+  
+  /* Franchise Section */
+  
+  .franchise{
+    margin: 4rem 8rem 0rem 8rem;
+    position: relative;
+  }
+  .franchise .img{
+    border-radius: 9px;
+  }
+  .franchise .title{
+    position: absolute;
+    top: 2rem;
+    left: 25%;
+    font-family: Helvetica;
+    font-size: 3rem;
+    font-weight: 600;
+    color:#F0F0F0 
+  }
+  
+  .franchise .num{
+    position: absolute;
+    top: 5.6rem;
+    left: 25%;
+    font-family: Helvetica;
+    font-size: 5rem;
+    font-weight: 600;
+    color:#F0F0F0 
+  }
+  .franchise .outlets{
+    position: absolute;
+    top: 12rem;
+    left: 25%;
+    font-family: Helvetica;
+    font-size: 2rem;
+    font-weight: 500;
+    color:#F54F15
+  }
+  .franchise .logo{
+    width: 300px;
+    position: absolute;
+    top: 2rem;
+    left: 2%;
+  }
+  
+  
+  /* Customer Review */
+  .cusRev{
+    margin-top: 4rem;
+    height:28rem;
+    background: url("./img/cusRevBack.jpeg") no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 8rem;
+  }
+  .cusRev--detail1{
+    margin-top: 2rem;
+    color: white;
+    font-size: 1.5rem;
+  }
+  .cusRev--detail2{
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  .cusRev .lines{
+    display: flex;
+    gap: 0.2rem;
+  }
+  .cusRev .line,
+  .lines .smallLine{
+    width:3rem;
+    height:2px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 1rem;
+    background: rgb(255, 255, 255);
+  }
+  .cusRev .lines .smallLine{
+    width:0.2rem;
+    background: rgb(255, 255, 255);
+  }
+  
+  .reviewList{
+    
+  }
+  .reviewsList .tile{
+    margin-top: 4rem;
+    width: 40rem;
+    height: 10rem;
+    background-color: #F0F0F0;
+    border-radius: 9px;
+    display: flex;
+    flex-flow: column;
+    text-align: justify;
+  }
+  
+  .reviewsList .tile .review{
+    margin: 2rem 2rem 0rem 2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+  }
+  .reviewsList .tile .name{
+    margin: 1.4rem 2rem 0rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  
+  /* Footer */
+  
+  .footer{
+    height:14rem;
+    background: #ed561f;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 8rem;
+  }
+  .footer .line{
+    width:3rem;
+    height:2px;
+    border: none;
+    border-radius: 3px;
+    margin: .6rem 0rem;
+    background: rgb(255, 255, 255);
+  }
+  .footer .section{
+    display: flex;
+    flex-flow: column;
+  }
+  .footer .section .title{
+    color: #F0F0F0;
+    margin-top: 1rem;
+  }
+  .footer .section .link{
+    color: #F0F0F0;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+  .payment .img-list{
+    width: 13rem;
+    height: 6rem;
+    display: flex;
+    flex-flow: column wrap;
+    gap:.7rem;
+  }
+  .payment .img-list .img{
+    width: 4rem;
+    height: 2.4rem;
+  }
+  
+  .follow .logo-list{
+    margin-top: 1rem;
+  }
+  .follow .logo-list .logo{
+    width: 40px;
+    margin-right: .7rem;
+  }
+  
+  
+  /* Owned Section */
+  
+  .owned{
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .owned .powered{
+    font-weight: 600;
+  }
+  .powered .color{
+    color: #c14a1f;
+  }
+  .owned .rights{
+    color: #c14a1fbc;
+    font-size: .8rem;
+  }
+  
+  
+  
+  
+  
+  
+  .lines .smallLine{
+    width:0.2rem;
+    background: rgb(19, 19, 19);
+  }

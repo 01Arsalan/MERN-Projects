@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+  </head>
+  <body >
+    <div id="root"></div>
+    <script src="app.js" type="text/babel"></script>
+    
+  </body>
+</html>
+
+<!-- const root = ReactDOM.createRoot(document.getElementById("root"))
+
+function Nav(){
+    return(
+        <div className="nav">
+            <img className="nav--logo" src="./img/troll_face.png" />
+            <h2 className="nav--title">Meme Generator</h2>
+            <p className="nav--project">React--Project 3</p>
+        </div>
+    )
+}
+
+function Hero(){
+
+    const [img,changeImg]=React.useState("./img/meme.jpg")
+    
+    function change(){
+        changeImg("./img/meme2.jpeg")
+        // changeImg(()=>{
+        //     return "./img/meme2.jpeg"
+        // })
+    }
+    function dda(){
+        console.log("sdfz")
+    }
+
+    return(
+        <div className="hero">
+            <form className="form">
+                <input className="form--input" type="text" placeholder="Top Text"/>
+                <input className="form--input" type="text" placeholder="Bottom Text"/>
+            </form>
+            <button onClick={change} className="hero--btn">Get a new image</button>
+            <div className="hero--imgHolder">
+                <img className="hero--img" src={img}/>
+            </div> 
+        </div>
+    )
+}
+
+function App(){
+    return(
+        <>
+        <Nav />
+        <Hero />
+        </>
+    )
+}
+
+
+
+root.render(<App />) -->

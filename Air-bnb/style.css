@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+#root {
+    background: rgb(255, 255, 255);
+    max-width: 40vw;
+    min-width: 40rem;
+    margin-top: 1rem;
+    border-radius: 9px;
+    height: fit-content;
+}
+
+.nav {
+    display: flex;
+    height: 90px;
+    box-shadow: 0px 10px 0px #888;
+}
+
+.logo {
+    border-radius: 9px;
+    margin: .7rem 2rem;
+}
+
+/* hero */
+
+.hero {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.hero--img {
+    overflow: hidden;
+    height: 280px;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+.hero--h1 {
+    font-family: "Gill Sans";
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin: 0rem 0rem 1rem 2rem;
+}
+
+.hero--p {
+    font-family: "Gill Sans";
+    font-weight: 350;
+    margin: 0rem 10rem 1rem 2rem;
+    font-size: 1.2rem;
+    color: #757474f6;
+
+}
+
+
+/* ----------------- */
+
+.slider {
+    display: flex;
+    flex: 0 0 auto;
+    overflow: scroll;
+    margin: 0rem 2rem;
+    gap: 1rem;
+}
+/* making scroll-bar invisible */
+.slider::-webkit-scrollbar { 
+    width: 0;
+  }
+
+.tile {
+    display: flex;
+    flex-flow: column;
+    height: 17rem;
+    position: relative;
+}
+
+.tile--img {
+    width: 10rem;
+    height: 12rem;
+    border-radius: 7px;
+}
+
+.tile--rating {
+    font-size: .8rem;
+    font-weight: 400;
+    color: #888;
+    margin-bottom: 6px;
+}
+
+.star {
+    color: red;
+}
+
+.bold-rating {
+    color: #515151;
+}
+
+.tile--detail {
+    font-size: .9rem;
+    font-family: "Gill Sans";
+    color: #686868;
+}
+
+.tile--rate {
+    color: #686868;
+    margin-top: 5px;
+    font-size: .8rem;
+}
+
+.tile--rate--bold {
+    color: #484747;
+    font-weight: bold;
+}
+
+.tile--tag {
+    background: #b9b9b9b1;
+    color: rgba(218, 9, 9, 0.71);
+    padding: 5px 10px;
+    border-radius: 4px;
+    width: fit-content;
+    font-size: .9rem;
+    font-family: "Gill Sans";
+    font-weight: bold;
+    position: absolute;
+}
+
+
+@media screen and (max-width:400px) {
+    #root{
+        max-width: 96%;
+        margin-top: 5%;
+        height: 96%;
+    }
+}
